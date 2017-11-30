@@ -6,16 +6,16 @@ import java.util.Calendar;
  */
 
 public class Task {
-    private int _id;
+    private String _id;
     private String _taskname;
     private String _note;
     private String _state;
-    private Calendar _deadline;
+    private String _deadline;
 
     public Task() {
     }
 
-    public Task(int id, String taskname, String note, String state, Calendar deadline) {
+    public Task(String id, String taskname, String note, String state, String deadline) {
         _id = id;
         _taskname = taskname;
         _note = note;
@@ -23,17 +23,17 @@ public class Task {
         _deadline = deadline;
     }
 
-    public Task(String taskname, String note, String state, Calendar deadline) {
+    public Task(String taskname, String note, String state, String deadline) {
         _taskname = taskname;
         _note = note;
         _state = state;
         _deadline = deadline;
     }
 
-    public void setID(int id) {
+    public void setID(String id) {
         _id = id;
     }
-    public int getID() { return _id; }
+    public String getID() { return _id; }
     public void setTaskName(String taskname) {
         _taskname = taskname;
     }
@@ -52,9 +52,9 @@ public class Task {
     public String getState() {
         return _state;
     }
-    public void setDeadline(Calendar date) {
+    public void setDeadline(String date) {
         _deadline = date;
     }
-    public String getDeadline() { return _deadline.toString(); }
+    public String getDeadline() { return _deadline; }
 
 }
