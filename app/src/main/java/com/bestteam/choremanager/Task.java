@@ -1,5 +1,8 @@
 package com.bestteam.choremanager;
+import android.widget.DatePicker;
+
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by frank on 2017-11-28.
@@ -10,12 +13,12 @@ public class Task {
     private String _taskname;
     private String _note;
     private String _state;
-    private Calendar _deadline;
+    Date  _deadline;
 
     public Task() {
     }
 
-    public Task(int id, String taskname, String note, String state, Calendar deadline) {
+    public Task(int id, String taskname, String note, String state, Date deadline) {
         _id = id;
         _taskname = taskname;
         _note = note;
@@ -23,7 +26,7 @@ public class Task {
         _deadline = deadline;
     }
 
-    public Task(String taskname, String note, String state, Calendar deadline) {
+    public Task(String taskname, String note, String state, Date deadline) {
         _taskname = taskname;
         _note = note;
         _state = state;
@@ -52,7 +55,7 @@ public class Task {
     public String getState() {
         return _state;
     }
-    public void setDeadline(Calendar date) {
+    public void setDeadline(Date date) {
         _deadline = date;
     }
     public String getDeadline() { return _deadline.toString(); }

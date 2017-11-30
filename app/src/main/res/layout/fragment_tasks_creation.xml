@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.bestteam.choremanager.TasksCreationFragment">
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/taskCreation"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter name" />
+        android:text="Task Creation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <EditText
         android:id="@+id/editTextNote"
@@ -22,26 +23,31 @@
         android:hint="Enter note" />
 
     <EditText
-        android:id="@+id/editTextDeadline"
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextNote"
-        android:hint="Enter deadline (YYYYMMDD)" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/taskCreation"
+        android:hint="Enter name" />
+
+    <DatePicker
+        android:id="@+id/deadline"
+        android:layout_width="match_parent"
+        android:layout_height="371dp"
+        android:layout_below="@+id/editTextNote"
+        android:layout_centerHorizontal="true"
+        android:scaleX="0.9"
+        android:scaleY="0.9" />
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editTextDeadline"
-        android:layout_weight="1"
-        android:layout_centerInParent="true"
-        android:text="Add Task" />
-
-    <ListView
-        android:id="@+id/listViewProducts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addButton">
-    </ListView>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:text="Add Task" />
 
 </RelativeLayout>
