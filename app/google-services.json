@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "47763366925",
+    "firebase_url": "https://testchoremaanger.firebaseio.com",
+    "project_id": "testchoremaanger",
+    "storage_bucket": "testchoremaanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47763366925:android:967ff753977db3b8",
+        "android_client_info": {
+          "package_name": "com.bestteam.choremanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47763366925-enp3ikd6atpflv2h91frpo4ac5fa06s1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bestteam.choremanager",
+            "certificate_hash": "078a52ee3a107460f1fea34f95cddc861beca6c1"
+          }
+        },
+        {
+          "client_id": "47763366925-0u6v1oqju4b2lh4cqu9toj9erfjl1r08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx97vG2qLw-_hVLzJZ6-ML563E_mkYGIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47763366925-0u6v1oqju4b2lh4cqu9toj9erfjl1r08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

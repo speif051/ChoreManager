@@ -9,12 +9,27 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+/**
+ * Firebase Libraries Added by Mike Nov 30 2017
+ */
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by frank on 2017-11-29.
  */
 
 public class TasksCreationFragment extends Fragment{
+
+    /**
+     * Setting up database, instance of DatabaseReference
+     */
+    DatabaseReference database;
 
     //Create Instance Variables to collect data from fragment_tasks_creation.xml.xml file
     EditText editTextDeadline, editTextNote, editTextName;
@@ -24,6 +39,9 @@ public class TasksCreationFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View myView = inflater.inflate(R.layout.fragment_tasks_creation, container, false);
+
+        //Database Reference
+        database = FirebaseDatabase.getInstance().getReference("Tasks");
 
         //Collects the information from fragment_tasks_creation.xml.xml file
         editTextDeadline = (EditText)myView.findViewById(R.id.editTextDeadline);
