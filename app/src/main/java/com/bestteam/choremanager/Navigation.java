@@ -2,9 +2,6 @@ package com.bestteam.choremanager;
 
 import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -73,15 +71,23 @@ public class Navigation extends AppCompatActivity
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_tasks_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_navigation, new Tasks()).commit();
+        if (id == R.id.nav_tasks_creation_list) {
+            TasksCreationFragment tasksCreationFragment = new TasksCreationFragment();
+            fragmentManager.beginTransaction().replace(R.id.fragment_content_navigation, tasksCreationFragment, tasksCreationFragment.getTag()).commit();
+            Toast.makeText(this,"Task", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_people_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_navigation, new People()).commit();
+            fragmentManager.beginTransaction().replace(R.id.fragment_content_navigation, new People()).commit();
+            Toast.makeText(this,"People", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_resource_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_navigation, new Resource()).commit();
+            fragmentManager.beginTransaction().replace(R.id.fragment_content_navigation, new Resource()).commit();
+            Toast.makeText(this, "Resource List", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_task_list) {
+            fragmentManager.beginTransaction().replace(R.id.fragment_content_navigation, new TasksListFragment()).commit();
+            Toast.makeText(this, "Task List", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_share) {
-
+            Toast.makeText(this,"Share", Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_send) {
+            Toast.makeText(this,"Send", Toast.LENGTH_SHORT).show();
 
         }
 

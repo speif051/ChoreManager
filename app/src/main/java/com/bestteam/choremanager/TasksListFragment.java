@@ -8,17 +8,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by frank on 2017-11-29.
+ * Created by Mike on 2017-11-30.
  */
 
-public class Tasks extends Fragment{
-
-    View myView;
-
-    @Nullable
-    @Override
+public class TasksListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.tasks_list, container, false);
+        View myView = inflater.inflate(R.layout.fragment_tasks_list, container, false);
         return myView;
     }
 }
+
