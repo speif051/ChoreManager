@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "939426345126",
+    "firebase_url": "https://chore-manager-36b9c.firebaseio.com",
+    "project_id": "chore-manager-36b9c",
+    "storage_bucket": "chore-manager-36b9c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939426345126:android:967ff753977db3b8",
+        "android_client_info": {
+          "package_name": "com.bestteam.choremanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939426345126-3uei5clvs27q12cd0dal5j5n9p1t40o5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bestteam.choremanager",
+            "certificate_hash": "70e307ae04d174316338d147cd4c71fbb7363b34"
+          }
+        },
+        {
+          "client_id": "939426345126-pb4k6vmpro3ka6tqfu79kduotleo2jl8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJm6DVcLzUbGRU276ujCzC2sqZ0nlFWvo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939426345126-pb4k6vmpro3ka6tqfu79kduotleo2jl8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
