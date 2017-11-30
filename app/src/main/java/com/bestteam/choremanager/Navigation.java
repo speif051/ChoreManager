@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.content.Intent;
 
 public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -74,7 +75,8 @@ public class Navigation extends AppCompatActivity
         FragmentManager fragmentManager = getFragmentManager();
 
         if (id == R.id.nav_tasks_list) {
-            fragmentManager.beginTransaction().replace(R.id.content_navigation, new Tasks()).commit();
+            //fragmentManager.beginTransaction().replace(R.id.content_navigation, new Tasks()).commit();
+            startActivity(new Intent(Navigation.this, Tasks.class));
         } else if (id == R.id.nav_people_list) {
             fragmentManager.beginTransaction().replace(R.id.content_navigation, new People()).commit();
         } else if (id == R.id.nav_resource_list) {
